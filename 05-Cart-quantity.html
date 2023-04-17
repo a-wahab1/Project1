@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>variables</title>
+  <style>
+
+  </style>
+</head>
+<body>
+  
+<p>
+    Cart Quantity
+</p>
+<p>
+  <button
+  onclick="
+  if(Quantity === 10)
+    { console.log(`Cart Quantity :${Quantity}
+  Cart is full `)
+  }else{
+   console.log(Quantity)
+  }
+ ">show Quantity </button>
+  
+  <button onclick="
+  if(Quantity < 10)
+  { console.log(`Cart Quantity :${Quantity+=1 }`)
+}else{
+  console.log('Cart full')
+}
+ ">Add to Cart</button>
+  
+  <button onclick="  
+  if(Quantity < 10)
+  { console.log(`Cart Quantity :${Quantity+=2 }`)
+}else{
+  console.log('Cart full')
+}
+ "">+2</button>
+  
+  <button onclick=" 
+   if(Quantity >= 9){
+   console.log('Cart full')
+}else{
+  console.log(`Cart Quantity :${Quantity+=3 }`)
+}
+ ">+3</button>
+ 
+  <button onclick="console.log(`Cart Quantity Reset Cart Quantity :${Quantity = 0}`)">Reset Cart</button>
+
+  <button onclick="
+  if (Quantity<=0){
+    console.log('Not enough items in Cart')
+  }else{
+  console.log(`Cart quantity: ${Quantity--}`)
+  };
+  ">Remove from cart</button>
+
+<button onclick="
+  if (Quantity<=0){
+    console.log('Not enough items in Cart')
+  }else{
+  console.log(`Cart quantity: ${Quantity-=2}`)
+  };
+">-2</button>
+
+<button onclick="
+    if (Quantity<=0){
+    console.log('Not enough items in Cart')
+  }else{ 
+  console.log(`Cart quantity: ${Quantity-=3}`)
+  };
+">-3</button>
+
+
+</p>
+
+
+  <script>
+  let Quantity = 0;
+/* in this project we used interpolation which is using string and numbers together in a much cleaner way than using cancatenation */
+
+
+  </script>
+</body>
+
+
+</html>
